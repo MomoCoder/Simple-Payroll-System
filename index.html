@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payroll System</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!-- for the header -->
+	<header>
+		<h1>Payroll System</h1>
+		<p>of McJollibee</p>
+	</header>
+	
+	<!-- for the position of the elements -->
+	<div class="container">
+
+		<!-- for the personal info forms -->
+		<div class="personalInfo">
+			<h2>Personal Info</h2>
+
+			<form>
+				<!-- forms -->
+				<label for="forName">Name :</label>
+					<input type="text" name="forName" id="nameInfo">
+				<label for="forAge">Age :</label>
+					<input type="text" name="forAge" id="ageInfo">
+				<label for="contactNo">Contact no. :</label>
+					<input type="text" name="contactNo" id="contactNo">
+				<label for="forPosition">Position :</label>
+					<select id="forPosition">
+						<option>Service Crew</option>
+						<option>Crew</option>
+						<option>Cashier</option>
+					</select>
+			</form>
+
+		</div>
+
+		<!-- for the salary report forms -->
+		<div class="salaryReport">
+			<h2>Salary Report</h2>
+
+			<form>
+				<!-- forms -->
+				<label for="hours">Hours :</label>
+					<input type="text" name="hours" id="hoursInfo">
+				<label for="forRate">Rate :</label>
+					<input type="text" name="forRate" id="rateInfo">
+				<label for="forBonus">Bonus :</label>
+					<input type="text" name="forBonus" id="bonusInfo">
+				<label for="forOvertime">OT :</label>
+					<input type="text" name="forOvertime" id="overtimeInfo">
+			</form>
+
+		</div>
+
+		<!-- for the submit button -->
+		<button id="submitButton">Submit</button>
+
+	</div>
+
+	<!-- for the results -->
+	<div class="containerResult">
+		<!-- for the result of the payroll system -->
+		<h2>Result</h2>
+		<h3>Name : </h3>
+			<p id="resultName"></p>
+		<h3>Age : </h3>
+			<p id="resultAge"></p>
+		<h3>Contact no. : </h3>
+			<p id="resultContact"></p>
+		<h3>Position : </h3>
+			<p id="resultPosition"></p>
+
+		<!-- for the salary report result -->
+		<h2>Salary Report</h2>
+		<h3>Salary : </h3>
+			<p id="resultSalary"></p>
+		<h3>Total of hour/s in work : </h3>
+			<p id="resultTotalWork"></p>
+		<h3>Bonus : </h3>
+			<p id="resultBonus"></p>
+		<h3>OT : </h3>
+			<p id="resultOvertime"></p>
+	</div>
+</body>
+</html>
